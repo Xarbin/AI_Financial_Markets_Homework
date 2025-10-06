@@ -1,0 +1,217 @@
+================================================================================
+GAME THEORY QUIZ - INSTALLATION AND USAGE GUIDE
+================================================================================
+
+PROJECT OVERVIEW
+----------------
+A GUI-based study program that presents 50 randomized multiple-choice
+questions per session to help prepare for Game Theory exams. Features
+immediate feedback, real-time score tracking, and comprehensive coverage
+of key Game Theory concepts.
+
+
+SYSTEM REQUIREMENTS
+-------------------
+- Python 3.6 or higher
+- Operating System: Windows, macOS, or Linux
+- Display: Minimum 900x700 resolution recommended
+
+
+INSTALLATION INSTRUCTIONS
+--------------------------
+
+1. VERIFY PYTHON INSTALLATION
+   Open a terminal/command prompt and run:
+
+   python --version
+
+   OR
+
+   python3 --version
+
+   You should see Python 3.6 or higher. If not, download from:
+   https://www.python.org/downloads/
+
+
+2. DOWNLOAD THE PROGRAM
+   Clone this repository or download the files:
+
+   git clone https://github.com/Xarbin/AI_Financial_Markets_Homework.git
+   cd AI_Financial_Markets_Homework
+
+   OR download the ZIP file and extract it.
+
+
+3. NO ADDITIONAL DEPENDENCIES REQUIRED
+   The program uses only Python standard library modules:
+   - tkinter (included with Python)
+   - random (included with Python)
+
+   Note: On some Linux systems, tkinter may need to be installed separately:
+
+   Ubuntu/Debian:
+   sudo apt-get install python3-tk
+
+   Fedora:
+   sudo dnf install python3-tkinter
+
+   Arch Linux:
+   sudo pacman -S tk
+
+
+RUNNING THE PROGRAM
+-------------------
+
+1. NAVIGATE TO THE PROGRAM DIRECTORY
+   cd path/to/Game_Theory
+
+
+2. RUN THE QUIZ
+   Windows:
+   python game_theory_quiz.py
+
+   macOS/Linux:
+   python3 game_theory_quiz.py
+
+
+3. ALTERNATIVE: DOUBLE-CLICK (Windows)
+   On Windows, you can double-click the game_theory_quiz.py file if
+   Python is properly associated with .py files.
+
+
+USAGE INSTRUCTIONS
+------------------
+
+1. START SCREEN
+   - Click "Start Quiz" to begin
+   - Each session presents 50 random questions
+
+
+2. ANSWERING QUESTIONS
+   - Read the question carefully
+   - Select one of the four answer choices (A-D)
+   - Click "Submit Answer" to check your response
+   - Review the immediate feedback and explanation
+   - Click "Next Question" to continue
+
+
+3. PROGRESS TRACKING
+   - Current question number and total (e.g., "Question 10/50")
+   - Real-time score display
+   - Visual progress bar
+
+
+4. RESULTS SCREEN
+   - View your final score and percentage
+   - Get performance feedback
+   - Click "Restart Quiz" to try again with new randomized questions
+   - Click "Exit" to close the program
+
+
+QUESTION BANK DETAILS
+----------------------
+- Total Questions: 58+ questions in the bank
+- Session Length: 50 randomly selected questions
+- Question Types:
+  * Conceptual understanding (dominant strategies, Nash equilibrium, etc.)
+  * Mathematical calculations (expected utility, probabilities, etc.)
+- Topics Covered:
+  * Dominant and dominated strategies
+  * Nash equilibrium (pure and mixed strategies)
+  * Best responses
+  * Expected utility and payoffs
+  * Zero-sum and non-zero-sum games
+  * Minimax and maximin principles
+  * Repeated games and the Folk Theorem
+  * Bayesian games (incomplete information)
+  * Mechanism design and incentive compatibility
+  * Prisoner's Dilemma and coordination games
+  * Pareto efficiency
+  * Evolutionary stable strategies (ESS)
+
+
+TROUBLESHOOTING
+---------------
+
+PROBLEM: "python: command not found" or "python3: command not found"
+SOLUTION: Python is not installed or not in PATH. Install Python from
+          python.org and ensure "Add Python to PATH" is checked during
+          installation.
+
+
+PROBLEM: "ModuleNotFoundError: No module named '_tkinter'"
+SOLUTION: Tkinter is not installed. See step 3 under Installation
+          Instructions for OS-specific installation commands.
+
+
+PROBLEM: Window appears too small or text is cut off
+SOLUTION: The window is resizable. Drag the corners to make it larger.
+          Minimum recommended resolution is 900x700.
+
+
+PROBLEM: Questions repeat in the same session
+SOLUTION: This only occurs if you restart the quiz. Each session randomly
+          selects 50 questions from the bank of 58+. Some repetition across
+          sessions is normal.
+
+
+PROBLEM: Program crashes or freezes
+SOLUTION: Close and restart the program. Ensure no other application is
+          interfering with tkinter. If issues persist, check Python version
+          compatibility.
+
+
+FILE STRUCTURE
+--------------
+Game_Theory/
+├── game_theory_quiz.py    # Main program file (run this)
+├── directive.md           # Project specifications
+└── installation.txt       # This file
+
+
+CUSTOMIZATION (ADVANCED)
+------------------------
+To add or modify questions, edit the QUESTION_BANK list in
+game_theory_quiz.py (starting around line 17).
+
+Each question follows this structure:
+{
+    "question": "Your question text here?",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "correct_answer": "Option B",
+    "explanation": "Brief explanation of the correct answer."
+}
+
+
+TECHNICAL SPECIFICATIONS
+-------------------------
+- Language: Python 3
+- GUI Framework: Tkinter
+- Architecture: Single standalone file
+- Data Storage: In-memory (no external files required)
+- Question Selection: Random sampling without replacement per session
+- Answer Randomization: Options shuffled for each question
+
+
+CREDITS
+-------
+Developed as a study tool for Game Theory exam preparation.
+Generated with Claude Code: https://claude.com/claude-code
+
+
+SUPPORT
+-------
+For issues, questions, or contributions:
+GitHub: https://github.com/Xarbin/AI_Financial_Markets_Homework
+
+
+VERSION INFORMATION
+-------------------
+Version: 1.0
+Release Date: 2025-10-06
+Python Compatibility: 3.6+
+
+
+================================================================================
+END OF INSTALLATION GUIDE
+================================================================================
